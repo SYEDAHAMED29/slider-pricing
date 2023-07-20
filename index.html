@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- displays site properly based on user's device -->
+
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+      <title>Frontend Mentor | Interactive pricing component</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+         rel="stylesheet"
+      />
+
+      <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+      <header>
+         <h3>Simple, traffic-based pricing</h3>
+         <p class="header-description">Sign-up for our 30-day trial. No credit card required.</p>
+      </header>
+
+      <div class="container">
+         <div class="first-section">
+            <p id="page-views"></p>
+            <div class="pricing-section">
+               <p id="pricing"></p>
+               <span class="pricing-month"> / month</span>
+            </div>
+         </div>
+         <div class="slider-price">
+            <input type="range" name="" id="price-slider" min="0" max="4" value="2" />
+         </div>
+         <div class="second-section">
+            <p>Monthly Billing</p>
+            <label class="toggle-switch">
+               <input type="checkbox" id="toggleBar" />
+               <span class="slider"></span>
+            </label>
+            <p>Yearly billing</p>
+            <p class="discount">25% discount</p>
+         </div>
+
+         <div class="third-section">
+            <div class="features">
+               <div class="feature-1">
+                  <img src="./images/icon-check.svg" alt="check-icon" />
+                  <p>Unlimited websites</p>
+               </div>
+               <div class="feature-2">
+                  <img src="./images/icon-check.svg" alt="check-icon" />
+                  <p>100% data ownership</p>
+               </div>
+               <div class="feature-3">
+                  <img src="./images/icon-check.svg" alt="check-icon" />
+                  <p>Email reports</p>
+               </div>
+            </div>
+            <div class="trail-button">
+               <button id="start-btn">Start my trial</button>
+            </div>
+         </div>
+      </div>
+   </body>
+   <script src="index.js"></script>
+</html>
