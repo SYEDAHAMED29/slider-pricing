@@ -3,6 +3,7 @@ const pricing = document.getElementById("pricing");
 const pageViews = document.getElementById("page-views");
 const toggleBar = document.getElementById("toggleBar");
 const discount = document.querySelector(".discount");
+const pricingMonth = document.querySelector(".pricing-month");
 
 const firstSection = document.querySelector(".first-section");
 const sliderDiv = document.querySelector(".slider-price");
@@ -40,8 +41,10 @@ toggleBar.addEventListener("change", () => {
    updateSliderColor();
    if (toggleBar.checked) {
       pricing.textContent = "$" + yearlyValues[slider.value] + ".00";
+      pricingMonth.textContent = " / year";
    } else {
       pricing.textContent = "$" + customValues[slider.value] + ".00";
+      pricingMonth.textContent = " / month";
    }
 });
 
