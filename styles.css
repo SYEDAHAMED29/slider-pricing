@@ -247,6 +247,9 @@ input:checked + .slider:before {
    .container {
       width: 60%;
    }
+   #pricing {
+      font-size: 2rem;
+   }
 }
 
 @media (max-width: 450px) {
